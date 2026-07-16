@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
-const AUTO_SCROLL_SPEED = 0.1;
+const AUTO_SCROLL_SPEED = 0.3;
 const RESUME_DELAY_MS = 1200;
 const BUTTON_SCROLL_FRACTION = 0.85;
 
