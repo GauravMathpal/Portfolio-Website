@@ -202,6 +202,61 @@ button {
   background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.08) 50%, transparent 70%);
 }
 
+.ambient-blob {
+  position: absolute;
+  border-radius: 9999px;
+  will-change: transform;
+}
+
+.ambient-blob-1 {
+  animation: ambient-drift-1 28s ease-in-out infinite;
+}
+.ambient-blob-2 {
+  animation: ambient-drift-2 34s ease-in-out infinite;
+}
+.ambient-blob-3 {
+  animation: ambient-drift-3 24s ease-in-out infinite;
+}
+
+@keyframes ambient-drift-1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(80px, 50px);
+  }
+  66% {
+    transform: translate(-30px, 100px);
+  }
+}
+
+@keyframes ambient-drift-2 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-70px, 80px);
+  }
+  66% {
+    transform: translate(40px, -40px);
+  }
+}
+
+@keyframes ambient-drift-3 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(50px, -70px);
+  }
+  66% {
+    transform: translate(-80px, 30px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { sora, jetbrainsMono } from "@/lib/fonts";
 import { Providers } from "./providers";
+import { AmbientBackground } from "@/components/layout/AmbientBackground";
 import { site } from "@/data/site";
 import "./globals.css";
 
@@ -26,6 +27,7 @@ export default function RootLayout({
       className={`${sora.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col" suppressHydrationWarning>
+        <AmbientBackground />
         <Providers>{children}</Providers>
       </body>
     </html>
