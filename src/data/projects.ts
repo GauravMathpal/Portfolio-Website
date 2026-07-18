@@ -1,5 +1,5 @@
 export type ProjectCategory = "web-apps" | "tools" | "platforms";
-export type ProjectTag = "Featured" | "Live" | "Concept";
+export type ProjectTag = "Featured" | "Live" | "Concept" | "Upcoming" | "Was Live";
 export type ProjectMotifKey = "orbit" | "waveform" | "portfolio" | "cityscape";
 
 export type Project = {
@@ -20,16 +20,16 @@ export const PROJECTS: Project[] = [
   {
     slug: "orbit",
     name: "Orbit OS",
-    tag: "Concept",
+    tag: "Upcoming",
     category: "platforms",
     description:
       "An all-in-one platform for students to manage academics, tasks, notes and resources in one place.",
     stack: ["Next.js", "Node.js", "PostgreSQL", "Tailwind"],
     motif: "orbit",
-    github: "https://github.com/example/orbit",
-    liveUrl: "https://example.com/orbit",
-    youtube: "https://youtube.com/watch?v=example-orbit",
-    linkedin: "https://linkedin.com/posts/example-orbit",
+    github: "https://github.com/GauravMathpal",
+    liveUrl: "https://gauravmathpal.dev",
+    youtube: "https://youtube.com",
+    linkedin: "https://linkedin.com/gaurav-mathpal",
   },
   {
     slug: "vibetune",
@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
     stack: ["React", "Socket.io", "Supabase", "Tailwind"],
     motif: "waveform",
     github: "https://github.com/GauravMathpal/VibeTune",
-    liveUrl: "https://vibetune-mu.vercel.app/",
+    liveUrl: "https://vibetune.gauravmathpal.dev",
     youtube: "https://youtube.com/",
     linkedin:
       "https://www.linkedin.com/feed/update/urn:li:activity:7385353051718619137/",
@@ -63,30 +63,22 @@ export const PROJECTS: Project[] = [
   {
     slug: "School-Management-System",
     name: "School Management System",
-    tag: "Live",
+    tag: "Was Live",
     category: "platforms",
     description:
       "Built my first website — a School Management System using WordPress for my school. Didn't have its source code now.",
     stack: ["Was Lived on WordPress"],
-    motif: "cityscape",
-    github: "https://github.com/GauravMathpal",
-    liveUrl: "https://gauravmathpal.dev/",
-    youtube: "https://youtube.com",
-    linkedin: "https://linkedin.com/Gaurav-Mathpal",
+    motif: "portfolio",
   },
   {
     slug: "Upcoming",
     name: "Next Project",
-    tag: "Concept",
+    tag: "Upcoming",
     category: "platforms",
     description:
       "Maybe your idea? I'm always open to collaborations and new opportunities. Let's build something amazing together.",
     stack: ["CommingSoon™"],
-    motif: "cityscape",
-    github: "https://github.com/GauravMathpal",
-    liveUrl: "https://gauravmathpal.dev/",
-    youtube: "https://youtube.com",
-    linkedin: "https://linkedin.com/Gaurav-Mathpal",
+    motif: "portfolio",
   },
 ];
 
