@@ -57,7 +57,11 @@ export function ProjectCard({
           {project.description}
         </p>
         <div className="border-brd mb-[18px] h-[150px] overflow-hidden rounded-xl border">
-          <ProjectMotif motif={project.motif} />
+          <ProjectMotif
+            motif={project.motif}
+            image={project.image}
+            alt={project.name}
+          />
         </div>
         <div className="flex flex-wrap gap-2">
           {project.stack.map((s) => (

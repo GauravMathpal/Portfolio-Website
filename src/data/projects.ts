@@ -10,6 +10,7 @@ export type Project = {
   description: string;
   stack: string[];
   motif: ProjectMotifKey;
+  image?: string;
   github?: string;
   liveUrl?: string;
   youtube?: string;
@@ -17,6 +18,19 @@ export type Project = {
 };
 
 export const PROJECTS: Project[] = [
+  {
+    slug: "expenseflow",
+    name: "ExpenseFlow",
+    tag: "Live",
+    category: "web-apps",
+    description:
+      "A modern expense tracker to manage personal finances, monitor daily spending, and analyze budget breakdowns effortlessly.",
+    stack: ["React", "Next.js", "Tailwind"],
+    motif: "cityscape",
+    image: "/projects/expenseflow.png",
+    liveUrl: "https://expenseflow.gauravmathpal.dev",
+    linkedin: "https://www.linkedin.com/in/gaurav-mathpal/",
+  },
   {
     slug: "orbit",
     name: "Orbit OS",
@@ -26,7 +40,10 @@ export const PROJECTS: Project[] = [
       "An all-in-one platform for students to manage academics, tasks, notes and resources in one place.",
     stack: ["Next.js", "Node.js", "PostgreSQL", "Tailwind"],
     motif: "orbit",
+    image: "/projects/orbit.png",
+    github: "https://github.com/GauravMathpal",
     liveUrl: "https://orbit.gauravmathpal.dev",
+    youtube: "https://youtube.com",
     linkedin: "https://linkedin.com/gaurav-mathpal",
   },
   {
@@ -38,6 +55,7 @@ export const PROJECTS: Project[] = [
       "Real-time music platform to listen together, chat together with friends across the world.",
     stack: ["React", "Socket.io", "Supabase", "Tailwind"],
     motif: "waveform",
+    image: "/projects/vibetune.png",
     github: "https://github.com/GauravMathpal/VibeTune",
     liveUrl: "https://vibetune.gauravmathpal.dev",
     youtube: "https://youtube.com/",

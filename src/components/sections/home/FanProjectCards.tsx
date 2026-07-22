@@ -57,7 +57,11 @@ export function FanProjectCards() {
                 </span>
               </div>
               <div className="border-brd h-[100px] overflow-hidden rounded-xl border sm:h-[130px] lg:h-[170px]">
-                <ProjectMotif motif={project.motif} />
+                <ProjectMotif
+                  motif={project.motif}
+                  image={project.image}
+                  alt={project.name}
+                />
               </div>
             </TransitionLink>
           </Reveal>

@@ -74,7 +74,11 @@ export function ProjectDetailModal({
                 </Dialog.Description>
 
                 <div className="border-brd mb-6 h-[240px] overflow-hidden rounded-2xl border">
-                  <ProjectMotif motif={project.motif} />
+                  <ProjectMotif
+                    motif={project.motif}
+                    image={project.image}
+                    alt={project.name}
+                  />
                 </div>
 
                 <p className="text-muted mb-6 text-[15px] leading-[1.7]">
